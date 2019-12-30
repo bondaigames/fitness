@@ -1,0 +1,386 @@
+{
+  "categories" : {
+    "-LxJ_FXiqbcbPw3hprjh" : {
+      "cateName" : "All Plans",
+      "createdDate" : "2019-12-30T02:14:10.331Z",
+      "parentId" : 0
+    },
+    "-LxKsY_UvuugNYttzAtw" : {
+      "cateName" : "Muscle Building",
+      "createdDate" : "2019-12-30T08:18:05.620Z",
+      "parentId" : 0
+    },
+    "-LxKsaT-SjLkuZsJZmM7" : {
+      "cateName" : "Weight Loss",
+      "createdDate" : "2019-12-30T08:18:18.063Z",
+      "parentId" : 0
+    },
+    "-LxKsd2gZ1cL-TPwvPxe" : {
+      "cateName" : "Gain Strength",
+      "createdDate" : "2019-12-30T08:18:28.682Z",
+      "parentId" : 0
+    },
+    "-LxKsfvk34Un3Sq1Kmlo" : {
+      "cateName" : "Get Fit",
+      "createdDate" : "2019-12-30T08:18:40.438Z",
+      "parentId" : 0
+    },
+    "-LxKsiar9qq4hZohM9pD" : {
+      "cateName" : "Performance",
+      "createdDate" : "2019-12-30T08:18:51.394Z",
+      "parentId" : 0
+    },
+    "-LxKslGHOAGMoI5TdFwk" : {
+      "cateName" : "Education",
+      "createdDate" : "2019-12-30T08:19:02.158Z",
+      "parentId" : 0
+    }
+  },
+  "plans" : {
+    "-LxM51SiqsUDO6R2ChVL" : {
+      "createdDate" : "2019-12-30T13:56:38.230Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/shortcut-to-size-logo-header-377x212.jpg",
+      "title" : "Shortcut to Size"
+    },
+    "-LxMAN6CbasIDQOiWcbl" : {
+      "createdDate" : "2019-12-30T14:19:57.033Z",
+      "duration" : "6",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/shortcut-to-shred-logo-header-377x212.jpg",
+      "title" : "Shortcut to Shred"
+    },
+    "-LxMAg5f64fhuMVwdxEB" : {
+      "createdDate" : "2019-12-30T14:21:19.004Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/gethin-muscle-building-logo-header-377x212.jpg",
+      "title" : "Kris Gethin Muscle Building"
+    },
+    "-LxMAzHf-OR7QqYKUvne" : {
+      "createdDate" : "2019-12-30T14:22:37.711Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/livefit-logo-header-377x212.jpg",
+      "title" : "Livefit"
+    },
+    "-LxMBELa8DlkCLb3iEj7" : {
+      "createdDate" : "2019-12-30T14:23:43.903Z",
+      "duration" : "8",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/modern-physique-logo-header-377x212.jpg",
+      "title" : "Modern Physique"
+    },
+    "-LxMBV1hV7G3Ekm_fsrK" : {
+      "createdDate" : "2019-12-30T14:24:52.260Z",
+      "duration" : "13",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/gethin-12-week-hardcore-logo-header-377x212.jpg",
+      "title" : "Gethin 12-Week Hardcore"
+    },
+    "-LxMBe9YCxgPoHEfxMJs" : {
+      "createdDate" : "2019-12-30T14:25:33.733Z",
+      "duration" : "8",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2019/september/fst-7-big-and-ripped-main-header-logo-1920x1080-b-377x212.jpg",
+      "title" : "FST-7"
+    },
+    "-LxMBrYBS1JSu3HflyPc" : {
+      "createdDate" : "2019-12-30T14:26:28.561Z",
+      "duration" : "6",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2018/alpha-m/tailored-header-1920x1080_v2-377x212.jpg",
+      "title" : "Alpha M's Tailored"
+    },
+    "-LxMC80O5OjdW8c2xYZL" : {
+      "createdDate" : "2019-12-30T14:27:40.113Z",
+      "duration" : "8",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/living-large-logo-header-377x212.jpg",
+      "title" : "Living Large"
+    },
+    "-LxMCHlVFCvQVd_SjMyq" : {
+      "createdDate" : "2019-12-30T14:28:20.060Z",
+      "duration" : "14",
+      "length" : "7",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/project-mass-logo-header-377x212.jpg",
+      "title" : "Project Mass"
+    },
+    "-LxMCR2aBIrVZulEKPxY" : {
+      "createdDate" : "2019-12-30T14:28:58.083Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/leanbody-logo-header-377x212.jpg",
+      "title" : "Lean Body"
+    },
+    "-LxMCZxWMJj3G0r3Ou3V" : {
+      "createdDate" : "2019-12-30T14:29:34.553Z",
+      "duration" : "8",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2019/fyr2/fyr2-main-header-logo-1920x1080-377x212.jpg",
+      "title" : "FYR 2.0"
+    },
+    "-LxMChTT1qERGsRzVo1V" : {
+      "createdDate" : "2019-12-30T14:30:09.439Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/transformed-logo-header-377x212.jpg",
+      "title" : "Transformed"
+    },
+    "-LxMCs4q1f3DAI8dnmhW" : {
+      "createdDate" : "2019-12-30T14:30:52.911Z",
+      "duration" : "6",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/building-von-moger-logo-header-377x212.jpg",
+      "title" : "Building Von Moger"
+    },
+    "-LxMCyt5r7p7jvdupLUn" : {
+      "createdDate" : "2019-12-30T14:31:20.770Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/freakmode-logo-header-377x212.jpg",
+      "title" : "FreakMode"
+    }
+  }
+}
