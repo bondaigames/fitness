@@ -51,6 +51,7 @@ const useHTTPHook = axios => {
         data: JSON.stringify(params)
       })
         .then(response => {
+          console.log("get response", response);
           dispatch({
             type: actionTypes.GET_RESPONSE,
             responseData: response.data

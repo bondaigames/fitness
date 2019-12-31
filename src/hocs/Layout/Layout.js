@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
-const layout = props => {
+const Layout = props => {
   return (
     <React.Fragment>
       <Header></Header>
@@ -12,4 +12,4 @@ const layout = props => {
   );
 };
 
-export default layout;
+export default Layout;

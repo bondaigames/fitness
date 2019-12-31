@@ -5,11 +5,13 @@ import "bootstrap/dist/js/bootstrap.js";
 import { Route, Switch } from "react-router-dom";
 import WorkOutPlanBuilder from "./containers/WorkOutPlanBuilder/WorkOutPlanBuilder";
 import PlanBuilder from "./containers/PlanBuilder/PlanBuilder";
+import ExerciseBuilder from "./containers/ExerciseBuilder/ExerciseBuilder";
 
 const app = props => {
   return (
     <Switch>
-      <Route path="/" exact component={PlanBuilder}></Route>
+      <Route path="/" exact component={ExerciseBuilder}></Route>
+      {/* <Route path="/" exact component={PlanBuilder}></Route> */}
       {/* <Route path="/" exact component={WorkOutPlanBuilder} /> */}
     </Switch>
   );

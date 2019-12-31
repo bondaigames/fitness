@@ -39,6 +39,15 @@ const ExerciseForm = props => {
               />
             </div>
             <div className="form-group">
+              <label>Link Tutorial:</label>
+              <input
+                type="text"
+                name="detailURL"
+                onChange={handleChange}
+                className="form-control"
+              />
+            </div>
+            <div className="form-group">
               <label>Link Image 1:</label>
               <input
                 type="text"

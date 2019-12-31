@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import MenuList from "../../components/Menu/MenuList";
 import Plan from "../../components/Plan/Plan";
 import Layout from "../../hocs/Layout/Layout";
@@ -18,48 +18,6 @@ const PlanBuilder = React.memo(props => {
     axiosFireBase
   );
   console.log("PlanBuilder rendering");
-
-  useEffect(() => {
-    if (_.isEqual(actionTypes.GET_RESPONSE, actionType)) {
-    }
-    // sendRequest(constants.CATEGORIES_JSON, actionTypes.GET_METHOD);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const dummyData = [
-    {
-      title: "Shortcut to Size",
-      level: "Beginner",
-      workOutLength: 45,
-      duration: "12 weeks",
-      link:
-        "https://www.bodybuilding.com/images/2017/october/shortcut-to-size-logo-header-377x212.jpg"
-    },
-    {
-      title: "Shortcut to Size",
-      level: "Beginner",
-      workOutLength: 45,
-      duration: "12 weeks",
-      link:
-        "https://www.bodybuilding.com/images/2017/october/shortcut-to-size-logo-header-377x212.jpg"
-    },
-    {
-      title: "Shortcut to Size",
-      level: "Beginner",
-      workOutLength: 45,
-      duration: "12 weeks",
-      link:
-        "https://www.bodybuilding.com/images/2017/october/shortcut-to-size-logo-header-377x212.jpg"
-    },
-    {
-      title: "Shortcut to Size",
-      level: "Beginner",
-      workOutLength: 45,
-      duration: "12 weeks",
-      link:
-        "https://www.bodybuilding.com/images/2017/october/shortcut-to-size-logo-header-377x212.jpg"
-    }
-  ];
 
   const addPlanHandler = plan => {
     console.log(plan);
