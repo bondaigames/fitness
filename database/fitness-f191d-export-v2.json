@@ -1,0 +1,836 @@
+{
+  "categories" : {
+    "-LxJ_FXiqbcbPw3hprjh" : {
+      "cateName" : "All Plans",
+      "createdDate" : "2019-12-30T02:14:10.331Z",
+      "parentId" : 0
+    },
+    "-LxKsY_UvuugNYttzAtw" : {
+      "cateName" : "Muscle Building",
+      "createdDate" : "2019-12-30T08:18:05.620Z",
+      "parentId" : 0
+    },
+    "-LxKsaT-SjLkuZsJZmM7" : {
+      "cateName" : "Weight Loss",
+      "createdDate" : "2019-12-30T08:18:18.063Z",
+      "parentId" : 0
+    },
+    "-LxKsd2gZ1cL-TPwvPxe" : {
+      "cateName" : "Gain Strength",
+      "createdDate" : "2019-12-30T08:18:28.682Z",
+      "parentId" : 0
+    },
+    "-LxKsfvk34Un3Sq1Kmlo" : {
+      "cateName" : "Get Fit",
+      "createdDate" : "2019-12-30T08:18:40.438Z",
+      "parentId" : 0
+    },
+    "-LxKsiar9qq4hZohM9pD" : {
+      "cateName" : "Performance",
+      "createdDate" : "2019-12-30T08:18:51.394Z",
+      "parentId" : 0
+    },
+    "-LxKslGHOAGMoI5TdFwk" : {
+      "cateName" : "Education",
+      "createdDate" : "2019-12-30T08:19:02.158Z",
+      "parentId" : 0
+    }
+  },
+  "exercises" : {
+    "-LxP71BDJul0IlXagmr2" : {
+      "createdDate" : "2019-12-31T04:04:12.809Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/barbell-bench-press-medium-grip",
+      "link1" : "/exercises/exerciseImages/360/Male/360_1.jpg",
+      "link2" : "/exercises/exerciseImages/360/Male/360_2.jpg",
+      "title" : "Barbell Bench Press - Medium Grip"
+    },
+    "-LxP7BaDCk5kWozpe_0D" : {
+      "createdDate" : "2019-12-31T04:04:55.431Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/barbell-incline-bench-press-medium-grip",
+      "link1" : "/exercises/exerciseImages/3311/Male/3311_1.jpg",
+      "link2" : "/exercises/exerciseImages/3311/Male/3311_2.jpg",
+      "title" : "Barbell Incline Bench Press Medium-Grip"
+    },
+    "-LxP7XAkMmYH5EieB0Eo" : {
+      "createdDate" : "2019-12-31T04:06:23.367Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/incline-dumbbell-flyes",
+      "link1" : "/exercises/exerciseImages/38/Male/38_1.jpg",
+      "link2" : "/exercises/exerciseImages/38/Male/38_2.jpg",
+      "title" : "Incline Dumbbell Flyes"
+    },
+    "-LxP7eiMptuX_2Ll7YO1" : {
+      "createdDate" : "2019-12-31T04:06:58.860Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/cable-crossover",
+      "link1" : "/exercises/exerciseImages/132/Male/132_1.jpg",
+      "link2" : "/exercises/exerciseImages/132/Male/132_2.jpg",
+      "title" : "Cable Crossover"
+    },
+    "-LxP7sjA9FJD4a5P6r8M" : {
+      "createdDate" : "2019-12-31T04:07:56.182Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/triceps-pushdown",
+      "link1" : "/exercises/exerciseImages/343/Male/343_1.jpg",
+      "link2" : "/exercises/exerciseImages/343/Male/343_2.jpg",
+      "title" : "Triceps Pushdown"
+    },
+    "-LxP8K2sUxIQdhyVQukZ" : {
+      "createdDate" : "2019-12-31T04:09:51.687Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/lying-dumbbell-tricep-extension",
+      "link1" : "/exercises/exerciseImages/229/Male/229_1.jpg",
+      "link2" : "/exercises/exerciseImages/229/Male/229_2.jpg",
+      "title" : "Lying Dumbbell Tricep Extension"
+    },
+    "-LxP8ZBoNSrtGpSdmHbp" : {
+      "createdDate" : "2019-12-31T04:10:54.266Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/cable-rope-overhead-triceps-extension",
+      "link1" : "/exercises/exerciseImages/220/Male/220_1.jpg",
+      "link2" : "/exercises/exerciseImages/220/Male/220_2.jpg",
+      "title" : "Cable Rope Overhead Triceps Extension"
+    },
+    "-LxP8mSbrhYyQxnjxg1z" : {
+      "createdDate" : "2019-12-31T04:11:52.678Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/standing-calf-raises",
+      "link1" : "/exercises/exerciseImages/48/Male/48_1.jpg",
+      "link2" : "/exercises/exerciseImages/48/Male/48_2.jpg",
+      "title" : "Standing Calf Raises"
+    },
+    "-LxP95MjMWvELYMLvwyT" : {
+      "createdDate" : "2019-12-31T04:13:13.809Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/seated-calf-raise",
+      "link1" : "/exercises/exerciseImages/152/Male/152_1.jpg",
+      "link2" : "/exercises/exerciseImages/152/Male/152_2.jpg",
+      "title" : "Seated Calf Raise"
+    },
+    "-LxP9M4DY_4ucjdXzaGV" : {
+      "createdDate" : "2019-12-31T04:14:22.672Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/one-arm-dumbbell-row",
+      "link1" : "/exercises/exerciseImages/13/Male/13_1.jpg",
+      "link2" : "/exercises/exerciseImages/13/Male/13_2.jpg",
+      "title" : "One-Arm Dumbbell Row"
+    },
+    "-LxP9_D3WwLAJ4TD1cEE" : {
+      "createdDate" : "2019-12-31T04:15:20.551Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/wide-grip-lat-pulldown",
+      "link1" : "/exercises/exerciseImages/10/Male/10_1.jpg",
+      "link2" : "/exercises/exerciseImages/10/Male/10_2.jpg",
+      "title" : "Wide-Grip Lat Pulldown"
+    },
+    "-LxPAaqeI_Z9eGGgb99S" : {
+      "createdDate" : "2019-12-31T04:19:48.967Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/straight-arm-pulldown",
+      "link1" : "/exercises/exerciseImages/11/Male/11_1.jpg",
+      "link2" : "/exercises/exerciseImages/11/Male/11_2.jpg",
+      "title" : "Straight-Arm Pulldown"
+    },
+    "-LxPAo_j6yY21ldbuLnL" : {
+      "createdDate" : "2019-12-31T04:20:45.681Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/barbell-curl",
+      "link1" : "/exercises/exerciseImages/169/Male/169_1.jpg",
+      "link2" : "/exercises/exerciseImages/169/Male/169_2.jpg",
+      "title" : "Barbell Curl"
+    },
+    "-LxPCQmPSUaLXgod5S1s" : {
+      "createdDate" : "2019-12-31T04:27:47.962Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/incline-dumbbell-curl",
+      "link1" : "/exercises/exerciseImages/114/Male/114_1.jpg",
+      "link2" : "/exercises/exerciseImages/114/Male/114_2.jpg",
+      "title" : "Incline Dumbbell Curl"
+    },
+    "-LxPCoyyyMnpznj9ASpB" : {
+      "createdDate" : "2019-12-31T04:29:31.182Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/overhead-cable-curl",
+      "link1" : "/exercises/exerciseImages/213/Male/213_1.jpg",
+      "link2" : "/exercises/exerciseImages/213/Male/213_2.jpg",
+      "title" : "Overhead Cable Curl"
+    },
+    "-LxPD25KSY6PorrDBtFa" : {
+      "createdDate" : "2019-12-31T04:30:29.405Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/bent-knee-hip-raise",
+      "link1" : "/exercises/exerciseImages/118/Male/118_1.jpg",
+      "link2" : "/exercises/exerciseImages/118/Male/118_2.jpg",
+      "title" : "Bent-Knee Hip Raise"
+    },
+    "-LxPDBtYFpZxG7DqA7Ng" : {
+      "createdDate" : "2019-12-31T04:31:09.545Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/crunches",
+      "link1" : "/exercises/exerciseImages/102/Male/102_1.jpg",
+      "link2" : "/exercises/exerciseImages/102/Male/102_2.jpg",
+      "title" : "Crunches"
+    },
+    "-LxPDOLbfoMmCo_Y51Mu" : {
+      "createdDate" : "2019-12-31T04:32:00.549Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/oblique-crunches",
+      "link1" : "/exercises/exerciseImages/104/Male/104_1.jpg",
+      "link2" : "/exercises/exerciseImages/104/Male/104_2.jpg",
+      "title" : "Oblique Crunches"
+    },
+    "-LxPDinrnOD2BC6woZjb" : {
+      "createdDate" : "2019-12-31T04:33:27.964Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/dumbbell-shoulder-press",
+      "link1" : "/exercises/exerciseImages/328/Male/328_1.jpg",
+      "link2" : "/exercises/exerciseImages/328/Male/328_2.jpg",
+      "title" : "Dumbbell Shoulder Press"
+    },
+    "-LxPDqCiW0Wuvs35roS5" : {
+      "createdDate" : "2019-12-31T04:33:58.725Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/side-lateral-raise",
+      "link1" : "/exercises/exerciseImages/373/Male/373_1.jpg",
+      "link2" : "/exercises/exerciseImages/373/Male/373_2.jpg",
+      "title" : "Side Lateral Raise"
+    },
+    "-LxPE5qydFTDIlRgwqtq" : {
+      "createdDate" : "2019-12-31T04:35:06.958Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/front-cable-raise",
+      "link1" : "/exercises/exerciseImages/75/Male/75_1.jpg",
+      "link2" : "/exercises/exerciseImages/75/Male/75_2.jpg",
+      "title" : "Front Cable Raise"
+    },
+    "-LxPEDFO5OaTQtym9FkW" : {
+      "createdDate" : "2019-12-31T04:35:37.172Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/cable-rear-delt-fly",
+      "link1" : "/exercises/exerciseImages/867/Male/867_1.jpg",
+      "link2" : "/exercises/exerciseImages/867/Male/867_2.jpg",
+      "title" : "Cable Rear Delt Fly"
+    },
+    "-LxPESWC_iJwQYe1IBW3" : {
+      "createdDate" : "2019-12-31T04:36:39.750Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/dumbbell-shrug",
+      "link1" : "/exercises/exerciseImages/96/Male/96_1.jpg",
+      "link2" : "/exercises/exerciseImages/96/Male/96_2.jpg",
+      "title" : "Dumbbell Shrug"
+    },
+    "-LxPF1vIYHOfO10JGWAa" : {
+      "createdDate" : "2019-12-31T04:39:12.253Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/calf-press-on-the-leg-press-machine",
+      "link1" : "/exercises/exerciseImages/215/Male/215_1.jpg",
+      "link2" : "/exercises/exerciseImages/215/Male/215_2.jpg",
+      "title" : "Calf Press On The Leg Press Machine"
+    },
+    "-LxPG5NHJDPSaRCAzgnp" : {
+      "createdDate" : "2019-12-31T04:43:48.619Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/barbell-squat",
+      "link1" : "/exercises/exerciseImages/3861/Male/3861_1.jpg",
+      "link2" : "/exercises/exerciseImages/3861/Male/3861_2.jpg",
+      "title" : "Barbell Squat"
+    },
+    "-LxPlCJR8CGrsgdWWc_1" : {
+      "createdDate" : "2019-12-31T07:04:05.321Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/single-leg-press",
+      "link1" : "/exercises/exerciseImages/3941/Male/3941_1.jpg",
+      "link2" : "/exercises/exerciseImages/3941/Male/3941_2.jpg",
+      "title" : "Single-Leg Press"
+    },
+    "-LxPlPdt-tv4a7oxxBxh" : {
+      "createdDate" : "2019-12-31T07:05:00.868Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/leg-extensions",
+      "link1" : "/exercises/exerciseImages/53/Male/53_1.jpg",
+      "link2" : "/exercises/exerciseImages/53/Male/53_2.jpg",
+      "title" : "Leg Extensions"
+    },
+    "-LxPlb_z4gzCcypoQ9q5" : {
+      "createdDate" : "2019-12-31T07:05:53.878Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/romanian-deadlift",
+      "link1" : "/exercises/exerciseImages/4091/Male/4091_1.jpg",
+      "link2" : "/exercises/exerciseImages/4091/Male/4091_2.jpg",
+      "title" : "Romanian Deadlift"
+    },
+    "-LxPlp06Oi2tAz5T3VmT" : {
+      "createdDate" : "2019-12-31T07:06:48.842Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/lying-leg-curls",
+      "link1" : "/exercises/exerciseImages/52/Male/52_1.jpg",
+      "link2" : "/exercises/exerciseImages/52/Male/52_2.jpg",
+      "title" : "Lying Leg Curls"
+    },
+    "-LxPmadeH81WSh-6CIeN" : {
+      "createdDate" : "2019-12-31T07:10:12.149Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/plank",
+      "link1" : "/exercises/exerciseImages/908/Male/908_1.jpg",
+      "link2" : "/exercises/exerciseImages/908/Male/908_2.jpg",
+      "title" : "Plank"
+    },
+    "-LxPn7GOlqoIiCJSL2vV" : {
+      "createdDate" : "2019-12-31T07:12:29.809Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/low-cable-crossover",
+      "link1" : "/exercises/exerciseImages/1621/Male/1621_1.jpg",
+      "link2" : "/exercises/exerciseImages/1621/Male/1621_2.jpg",
+      "title" : "Low Cable Crossover"
+    },
+    "-LxPnlQ_eYp0bECSiMVg" : {
+      "createdDate" : "2019-12-31T07:15:18.437Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/hanging-leg-raise",
+      "link1" : "/exercises/exerciseImages/222/Male/222_1.jpg",
+      "link2" : "/exercises/exerciseImages/222/Male/222_2.jpg",
+      "title" : "Hanging Leg Raise"
+    },
+    "-LxPnvi0fd_7V65rrBDn" : {
+      "createdDate" : "2019-12-31T07:16:00.566Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/weighted-crunches",
+      "link1" : "/exercises/exerciseImages/926/Male/926_1.jpg",
+      "link2" : "/exercises/exerciseImages/926/Male/926_2.jpg",
+      "title" : "Weighted Crunches"
+    },
+    "-LxPoA2IM_JhsBQZWure" : {
+      "createdDate" : "2019-12-31T07:17:03.367Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/dumbbell-side-bend",
+      "link1" : "/exercises/exerciseImages/88/Male/88_1.jpg",
+      "link2" : "/exercises/exerciseImages/88/Male/88_2.jpg",
+      "title" : "Dumbbell Side Bend"
+    },
+    "-LxPos0wkokgnm_fDI-x" : {
+      "createdDate" : "2019-12-31T07:20:07.700Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/side-bridge",
+      "link1" : "/exercises/exerciseImages/249/Male/249_1.jpg",
+      "link2" : "/exercises/exerciseImages/249/Male/249_2.jpg",
+      "title" : "Side Bridge"
+    },
+    "-LxPpl4KSiCydAWQwHAs" : {
+      "createdDate" : "2019-12-31T07:24:01.398Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/cable-crunch",
+      "link1" : "/exercises/exerciseImages/163/Male/163_1.jpg",
+      "link2" : "/exercises/exerciseImages/163/Male/163_2.jpg",
+      "title" : "Cable Crunch"
+    },
+    "-LxPqWVaL0Q7Fm-CPVBW" : {
+      "createdDate" : "2019-12-31T07:27:19.729Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/standing-cable-wood-chop",
+      "link1" : "/exercises/exerciseImages/935/Male/935_1.jpg",
+      "link2" : "/exercises/exerciseImages/935/Male/935_2.jpg",
+      "title" : "Standing Cable Wood Chop"
+    },
+    "-LxPrKHCNupmPpaAytsM" : {
+      "createdDate" : "2019-12-31T07:30:51.805Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/ab-crunch-machine",
+      "link1" : "/exercises/exerciseImages/225/Male/225_1.jpg",
+      "link2" : "/exercises/exerciseImages/225/Male/225_2.jpg",
+      "title" : "Ab Crunch Machine"
+    },
+    "-LxPrkplDtLSvYlmo899" : {
+      "createdDate" : "2019-12-31T07:32:44.631Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/dumbbell-flyes",
+      "link1" : "/exercises/exerciseImages/12/Male/12_1.jpg",
+      "link2" : "/exercises/exerciseImages/12/Male/12_2.jpg",
+      "title" : "Dumbbell Flyes"
+    },
+    "-LxPs84jM5lu15HCpVjK" : {
+      "createdDate" : "2019-12-31T07:34:23.988Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/incline-cable-flye",
+      "link1" : "/exercises/exerciseImages/181/Male/181_1.jpg",
+      "link2" : "/exercises/exerciseImages/181/Male/181_2.jpg",
+      "title" : "Incline Cable Flye"
+    },
+    "-LxPsM4vEjqk7Nv-sHM8" : {
+      "createdDate" : "2019-12-31T07:35:21.344Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/standing-dumbbell-triceps-extension",
+      "link1" : "/exercises/exerciseImages/345/Male/345_1.jpg",
+      "link2" : "/exercises/exerciseImages/345/Male/345_2.jpg",
+      "title" : "Standing Dumbbell Triceps Extension"
+    },
+    "-LxPsSENHbReQq-JBRBg" : {
+      "createdDate" : "2019-12-31T07:35:46.503Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/cable-lying-triceps-extension",
+      "link1" : "/exercises/exerciseImages/161/Male/161_1.jpg",
+      "link2" : "/exercises/exerciseImages/161/Male/161_2.jpg",
+      "title" : "Cable Lying Triceps Extension"
+    },
+    "-LxPsbP4qfiiuqInwU8K" : {
+      "createdDate" : "2019-12-31T07:36:28.114Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/bent-over-barbell-row",
+      "link1" : "/exercises/exerciseImages/20/Male/20_1.jpg",
+      "link2" : "/exercises/exerciseImages/20/Male/20_2.jpg",
+      "title" : "Bent Over Barbell Row"
+    },
+    "-LxPspI-Aqmdt6LbQnMT" : {
+      "createdDate" : "2019-12-31T07:37:25.055Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/wide-grip-pulldown-behind-the-neck",
+      "link1" : "/exercises/exerciseImages/15/Male/15_1.jpg",
+      "link2" : "/exercises/exerciseImages/15/Male/15_2.jpg",
+      "title" : "Wide-Grip Pulldown Behind The Neck"
+    },
+    "-LxPt0XJIDdti2C6BfdP" : {
+      "createdDate" : "2019-12-31T07:38:15.212Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/seated-cable-rows",
+      "link1" : "/exercises/exerciseImages/45/Male/45_1.jpg",
+      "link2" : "/exercises/exerciseImages/45/Male/45_2.jpg",
+      "title" : "Seated Cable Rows"
+    },
+    "-LxPtCXaNUbSrmy-vp0U" : {
+      "createdDate" : "2019-12-31T07:39:04.368Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/underhand-cable-pulldowns",
+      "link1" : "/exercises/exerciseImages/139/Male/139_1.jpg",
+      "link2" : "/exercises/exerciseImages/139/Male/139_2.jpg",
+      "title" : "Underhand Cable Pulldowns"
+    },
+    "-LxPtRC_eG8ScQDHI4cV" : {
+      "createdDate" : "2019-12-31T07:40:04.468Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/preacher-curl",
+      "link1" : "/exercises/exerciseImages/180/Male/180_1.jpg",
+      "link2" : "/exercises/exerciseImages/180/Male/180_2.jpg",
+      "title" : "Preacher Curl"
+    },
+    "-LxPtbxj5B_ybzs1VPUp" : {
+      "createdDate" : "2019-12-31T07:40:52.609Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/standing-one-arm-cable-curl",
+      "link1" : "/exercises/exerciseImages/192/Male/192_1.jpg",
+      "link2" : "/exercises/exerciseImages/192/Male/192_2.jpg",
+      "title" : "Standing One-Arm Cable Curl"
+    },
+    "-LxPtoNs82AO3ypnzqmx" : {
+      "createdDate" : "2019-12-31T07:41:43.481Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/smith-machine-upright-row",
+      "link1" : "/exercises/exerciseImages/78/Male/78_1.jpg",
+      "link2" : "/exercises/exerciseImages/78/Male/78_2.jpg",
+      "title" : "Smith Machine Upright Row"
+    },
+    "-LxPu-FvZWzgEY3M6ggt" : {
+      "createdDate" : "2019-12-31T07:42:32.122Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/standing-low-pulley-deltoid-raise",
+      "link1" : "/exercises/exerciseImages/72/Male/72_1.jpg",
+      "link2" : "/exercises/exerciseImages/72/Male/72_2.jpg",
+      "title" : "Standing Low-Pulley Deltoid Raise"
+    },
+    "-LxPu5RhhyrcUqSy7trT" : {
+      "createdDate" : "2019-12-31T07:42:57.463Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/cable-seated-lateral-raise",
+      "link1" : "/exercises/exerciseImages/79/Male/79_1.jpg",
+      "link2" : "/exercises/exerciseImages/79/Male/79_2.jpg",
+      "title" : "Cable Seated Lateral Raise"
+    },
+    "-LxPuHad2-hEWXz_1Cz4" : {
+      "createdDate" : "2019-12-31T07:43:47.227Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/front-barbell-squat",
+      "link1" : "/exercises/exerciseImages/42/Male/42_1.jpg",
+      "link2" : "/exercises/exerciseImages/42/Male/42_2.jpg",
+      "title" : "Front Barbell Squat"
+    },
+    "-LxPud9ARMDJ-XflaE85" : {
+      "createdDate" : "2019-12-31T07:45:19.635Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/seated-leg-curl",
+      "link1" : "/exercises/exerciseImages/69/Male/69_1.jpg",
+      "link2" : "/exercises/exerciseImages/69/Male/69_2.jpg",
+      "title" : "Seated Leg Curl"
+    },
+    "-LxPvYleuu4Y73yTV2Xx" : {
+      "createdDate" : "2019-12-31T07:49:19.711Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/oblique-cable-crunch",
+      "link1" : "/exercises/exerciseImages/3293/Male/3293_1.jpg",
+      "link2" : "/exercises/exerciseImages/3293/Male/3293_2.jpg",
+      "title" : "Oblique Cable Crunch"
+    },
+    "-LxPwQl2OpEe-qL04jEn" : {
+      "createdDate" : "2019-12-31T07:53:08.453Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/smith-machine-hip-raise",
+      "link1" : "exercises/exerciseImages/2181/Male/2181_1.jpg",
+      "link2" : "exercises/exerciseImages/2181/Male/2181_2.jpg",
+      "title" : "Smith Machine Hip Raise"
+    },
+    "-LxPwmNSZgAdCgLTwdOq" : {
+      "createdDate" : "2019-12-31T07:54:41.716Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/incline-dumbbell-press-reverse-grip",
+      "link1" : "/exercises/exerciseImages/3331/Male/3331_1.jpg",
+      "link2" : "/exercises/exerciseImages/3331/Male/3331_2.jpg",
+      "title" : "Incline Dumbbell Press Reverse-Grip"
+    },
+    "-LxPx4ydG9oGThxjS0JS" : {
+      "createdDate" : "2019-12-31T07:56:01.931Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/dumbbell-one-arm-triceps-extension",
+      "link1" : "/exercises/exerciseImages/324/Male/324_1.jpg",
+      "link2" : "/exercises/exerciseImages/324/Male/324_2.jpg",
+      "title" : "Dumbbell One-Arm Triceps Extension"
+    },
+    "-LxPxFCAm9oWij1OdnGZ" : {
+      "createdDate" : "2019-12-31T07:56:43.866Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/close-grip-barbell-bench-press",
+      "link1" : "/exercises/exerciseImages/23/Male/23_1.jpg",
+      "link2" : "/exercises/exerciseImages/23/Male/23_2.jpg",
+      "title" : "Close-Grip Barbell Bench Press"
+    },
+    "-LxPxSkIOVQMKjLRQYyK" : {
+      "createdDate" : "2019-12-31T07:57:39.350Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/bent-over-two-dumbbell-row",
+      "link1" : "/exercises/exerciseImages/16/Male/16_1.jpg",
+      "link2" : "/exercises/exerciseImages/16/Male/16_2.jpg",
+      "title" : "Bent Over Two-Dumbbell Row"
+    },
+    "-LxPxjs1XL7qTaYhRWQj" : {
+      "createdDate" : "2019-12-31T07:58:53.587Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/concentration-curls",
+      "link1" : "/exercises/exerciseImages/136/Male/136_1.jpg",
+      "link2" : "/exercises/exerciseImages/136/Male/136_2.jpg",
+      "title" : "Concentration Curls"
+    },
+    "-LxPy2r4mEC9Q9sMG_vE" : {
+      "createdDate" : "2019-12-31T08:00:15.435Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/standing-dumbbell-upright-row",
+      "link1" : "/exercises/exerciseImages/368/Male/368_1.jpg",
+      "link2" : "/exercises/exerciseImages/368/Male/368_2.jpg",
+      "title" : "Standing Dumbbell Upright Row"
+    },
+    "-LxPyGDx9Clsh2AbMNZI" : {
+      "createdDate" : "2019-12-31T08:01:10.151Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/seated-bent-over-rear-delt-raise",
+      "link1" : "/exercises/exerciseImages/377/Male/377_1.jpg",
+      "link2" : "/exercises/exerciseImages/377/Male/377_2.jpg",
+      "title" : "Seated Bent-Over Rear Delt Raise"
+    },
+    "-LxPyR7oICfMoY8RsKFm" : {
+      "createdDate" : "2019-12-31T08:01:54.853Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/smith-machine-shrug",
+      "link1" : "/exercises/exerciseImages/134/Male/134_1.jpg",
+      "link2" : "/exercises/exerciseImages/134/Male/134_2.jpg",
+      "title" : "Smith Machine Shrug"
+    },
+    "-LxPyefZPkOuxN9lZmaQ" : {
+      "createdDate" : "2019-12-31T08:02:54.435Z",
+      "detailURL" : "https://www.bodybuilding.com/exercises/leg-press",
+      "link1" : "/exercises/exerciseImages/57/Male/57_1.jpg",
+      "link2" : "/exercises/exerciseImages/57/Male/57_2.jpg",
+      "title" : "Leg Press"
+    }
+  },
+  "plans" : {
+    "-LxM51SiqsUDO6R2ChVL" : {
+      "createdDate" : "2019-12-30T13:56:38.230Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/shortcut-to-size-logo-header-377x212.jpg",
+      "title" : "Shortcut to Size"
+    },
+    "-LxMAN6CbasIDQOiWcbl" : {
+      "createdDate" : "2019-12-30T14:19:57.033Z",
+      "duration" : "6",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/shortcut-to-shred-logo-header-377x212.jpg",
+      "title" : "Shortcut to Shred"
+    },
+    "-LxMAg5f64fhuMVwdxEB" : {
+      "createdDate" : "2019-12-30T14:21:19.004Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/gethin-muscle-building-logo-header-377x212.jpg",
+      "title" : "Kris Gethin Muscle Building"
+    },
+    "-LxMAzHf-OR7QqYKUvne" : {
+      "createdDate" : "2019-12-30T14:22:37.711Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/livefit-logo-header-377x212.jpg",
+      "title" : "Livefit"
+    },
+    "-LxMBELa8DlkCLb3iEj7" : {
+      "createdDate" : "2019-12-30T14:23:43.903Z",
+      "duration" : "8",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/modern-physique-logo-header-377x212.jpg",
+      "title" : "Modern Physique"
+    },
+    "-LxMBV1hV7G3Ekm_fsrK" : {
+      "createdDate" : "2019-12-30T14:24:52.260Z",
+      "duration" : "13",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/gethin-12-week-hardcore-logo-header-377x212.jpg",
+      "title" : "Gethin 12-Week Hardcore"
+    },
+    "-LxMBe9YCxgPoHEfxMJs" : {
+      "createdDate" : "2019-12-30T14:25:33.733Z",
+      "duration" : "8",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2019/september/fst-7-big-and-ripped-main-header-logo-1920x1080-b-377x212.jpg",
+      "title" : "FST-7"
+    },
+    "-LxMBrYBS1JSu3HflyPc" : {
+      "createdDate" : "2019-12-30T14:26:28.561Z",
+      "duration" : "6",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2018/alpha-m/tailored-header-1920x1080_v2-377x212.jpg",
+      "title" : "Alpha M's Tailored"
+    },
+    "-LxMC80O5OjdW8c2xYZL" : {
+      "createdDate" : "2019-12-30T14:27:40.113Z",
+      "duration" : "8",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/living-large-logo-header-377x212.jpg",
+      "title" : "Living Large"
+    },
+    "-LxMCHlVFCvQVd_SjMyq" : {
+      "createdDate" : "2019-12-30T14:28:20.060Z",
+      "duration" : "14",
+      "length" : "7",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/project-mass-logo-header-377x212.jpg",
+      "title" : "Project Mass"
+    },
+    "-LxMCR2aBIrVZulEKPxY" : {
+      "createdDate" : "2019-12-30T14:28:58.083Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/leanbody-logo-header-377x212.jpg",
+      "title" : "Lean Body"
+    },
+    "-LxMCZxWMJj3G0r3Ou3V" : {
+      "createdDate" : "2019-12-30T14:29:34.553Z",
+      "duration" : "8",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2019/fyr2/fyr2-main-header-logo-1920x1080-377x212.jpg",
+      "title" : "FYR 2.0"
+    },
+    "-LxMChTT1qERGsRzVo1V" : {
+      "createdDate" : "2019-12-30T14:30:09.439Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/transformed-logo-header-377x212.jpg",
+      "title" : "Transformed"
+    },
+    "-LxMCs4q1f3DAI8dnmhW" : {
+      "createdDate" : "2019-12-30T14:30:52.911Z",
+      "duration" : "6",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/building-von-moger-logo-header-377x212.jpg",
+      "title" : "Building Von Moger"
+    },
+    "-LxMCyt5r7p7jvdupLUn" : {
+      "createdDate" : "2019-12-30T14:31:20.770Z",
+      "duration" : "12",
+      "length" : "45",
+      "level" : [ {
+        "id" : 0,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Beginner"
+      }, {
+        "id" : 1,
+        "key" : "level",
+        "selected" : true,
+        "title" : "Intermediate"
+      }, {
+        "id" : 2,
+        "key" : "level",
+        "selected" : false,
+        "title" : "Advanced"
+      } ],
+      "link" : "https://www.bodybuilding.com/images/2017/october/freakmode-logo-header-377x212.jpg",
+      "title" : "FreakMode"
+    }
+  }
+}

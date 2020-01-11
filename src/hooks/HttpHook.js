@@ -8,7 +8,7 @@ const httpReducer = (state, action) => {
         loading: true,
         error: null,
         data: null,
-        actionType: action.type
+        identifier: action.identifier
       };
     }
     case actionTypes.GET_RESPONSE: {
@@ -41,14 +41,14 @@ const useHTTPHook = axios => {
   });
 
   const sendRequest = useCallback(
-    (url, method, params) => {
+    (url, method, params, reqIdentifer) => {
       console.log("url: ", url);
-      dispatch({ type: actionTypes.SEND_REQUEST });
+      dispatch({ type: actionTypes.SEND_REQUEST, identifier: reqIdentifer });
 
       axios({
         method: method,
         url: url,
-        data: JSON.stringify(params)
+        data: params
       })
         .then(response => {
           console.log("get response", response);
@@ -58,6 +58,7 @@ const useHTTPHook = axios => {
           });
         })
         .catch(err => {
+          console.log("=======================", err);
           dispatch({
             type: actionTypes.GET_ERROR,
             errorMessage: err.message
@@ -72,7 +73,7 @@ const useHTTPHook = axios => {
     data: state.data,
     error: state.error,
     sendRequest: sendRequest,
-    actionType: state.actionType
+    reqIdentifer: state.identifier
   };
 };
 
