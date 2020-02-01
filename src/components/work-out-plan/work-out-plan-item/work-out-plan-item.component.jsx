@@ -57,6 +57,7 @@ const WorkoutPlanItem = ({ exercises }) => {
         <p className="font-weight-bold text-center text-lg-left mb-0">
           {title}
         </p>
+        <p className="text-center text-lg-left mb-0">{definition}</p>
         <p className="text-center text-lg-left">{description}</p>
         {transformRenderExercise}
       </Fragment>
