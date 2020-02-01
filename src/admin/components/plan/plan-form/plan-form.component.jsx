@@ -1,25 +1,38 @@
 import React, { useEffect, useState } from "react";
 import Spinner from "../../../../UI/Spinner/Spinner";
 import Alert from "../../../../UI/Alert/Alert";
-import { Field, FieldArray, arrayPush, reduxForm } from "redux-form";
+import {
+  Field,
+  FieldArray,
+  arrayPush,
+  reduxForm,
+  arrayRemoveAll,
+  formValueSelector,
+  change
+} from "redux-form";
 import "./plan-form.styles.scss";
 import useHTTPHook from "../../../../hooks/HttpHook";
 import useFirebase from "../../../../hooks/axios/axios-firebase";
 import * as actionTypes from "../../../../hooks/actionTypes";
 import CustomDropdown from "../../../../UI/CustomDropdown/CustomDropdown.component";
 import ListGroup from "../UI-Custom/list-group/list-group.component";
+import ListCard from "../UI-Custom/list-card/list-card.component";
+import _ from "lodash";
+import { connect } from "react-redux";
 
 const GET_ALL_EXERCISE = "GET_ALL_EXERCISE";
 const ADD_EXERCISE = "ADD_EXERCISE";
 
-const PlanForm = ({ handleSubmit, reset, mode, dispatch, form }) => {
+const PlanForm = ({ handleSubmit, reset, mode, dispatch, daysValue }) => {
   const { axiosFireBase, constants } = useFirebase();
   const { isLoading, data, error, sendRequest, reqIdentifer } = useHTTPHook(
     axiosFireBase
   );
 
+  //orginal data loaded from server
   const [exercises, setExercisesData] = useState([]);
-  const [selectedEx, setSelectedEx] = useState([]);
+  const [days, setDays] = useState([]);
+  // const [selectedEx, setSelectedEx] = useState([]);
 
   console.log("current mode:", mode);
 
@@ -35,30 +48,99 @@ const PlanForm = ({ handleSubmit, reset, mode, dispatch, form }) => {
 
   useEffect(() => {
     if (!isLoading && !error && reqIdentifer === GET_ALL_EXERCISE) {
-      setExercisesData(data);
+      const sorted = data.sort((a, b) => {
+        // const isReversed = (sortType === 'asc') ? 1: -1;
+        //return isReversed * a.title.localeCompare(b.title);
+        return a.title.localeCompare(b.title);
+      });
+
+      setExercisesData(sorted);
     }
     // setExercisesData(data);
   }, [data, error, isLoading, reqIdentifer]);
 
-  const handleSelectedRow = (item, idx) => {
-    const newExArray = [...exercises];
-    newExArray[idx].selected = !newExArray[idx].selected;
-    setExercisesData(newExArray);
-    updatedSelectEx(newExArray[idx]);
+  const handleSelectedRow = (item, idx, extraParams) => {
+    console.log("extraParams, ", extraParams);
+    const currentDay = [...days[extraParams.idx]];
+    currentDay[idx].selected = !currentDay[idx].selected;
+    console.log("after change monitor original data", exercises);
+
+    const newDaysArray = [...days];
+    days[extraParams.idx] = currentDay;
+    setDays(newDaysArray);
+    console.log("newDaysArray:", newDaysArray);
+    updatedListSelectExercise(currentDay[idx], extraParams);
   };
 
   //Update selected list
-  const updatedSelectEx = newExObj => {
+  const updatedListSelectExercise = (newExObj, extraParams) => {
+    console.log("[extraParams.idx].exercises", daysValue);
+    // return;
+
+    const newSelectedEx = _.cloneDeep(daysValue[extraParams.idx]);
     if (!newExObj.selected) {
       //remove item
 
-      const filterArr = selectedEx.filter(item => item.id !== newExObj.id);
-      setSelectedEx(filterArr);
+      const filterArr = newSelectedEx.exercises.filter(
+        item => item.id !== newExObj.id
+      );
+      newSelectedEx.exercises = filterArr;
+      // setSelectedEx(newSelectedEx);
     } else {
-      const newSelectedEx = [...selectedEx, newExObj];
-      setSelectedEx(newSelectedEx);
-      dispatch(arrayPush(form, "notes", []));
+      // const newSelectedEx = _.cloneDeep(selectedEx);
+      newSelectedEx.exercises.push({
+        ...newExObj
+      });
+
+      console.log("newExObjnewExObj", newExObj);
+      // console.log("newSelectedEx", newSelectedEx);
+      //   // dispatch(
+      //   //   arrayPush(form, `${extraParams.tagName}[${extraParams.idx}].notes`, [])
+      //   // );
     }
+
+    console.log("newSelectedEx: ", newSelectedEx);
+
+    // setSelectedEx(newSelectedEx);
+
+    // dispatch(
+    //   arrayRemoveAll(
+    //     form,
+    //     `${extraParams.tagName}[${extraParams.idx}].exercises`
+    //   )
+    // );
+    dispatch(
+      change(
+        "PlanForm",
+        `${extraParams.tagName}[${extraParams.idx}].exercises`,
+        newSelectedEx.exercises
+      )
+    );
+  };
+
+  const handleRemoveExercise = index => {};
+
+  /* format data
+    [{
+      days1: {
+
+      } 
+    }]
+  */
+  console.log("dispatch change: ", daysValue);
+  const handleLoadDataByTagName = (tagName, idx) => {
+    console.log(`tagname: ${tagName} and index: ${idx}`);
+
+    const newArray = [...days, _.cloneDeep(exercises)];
+    // const newSelectedArray = [...selectedEx, []];
+
+    console.log("newArray: ", newArray);
+    setDays(newArray);
+    console.log(`${tagName}[${idx}].exercises`);
+    dispatch(change("PlanForm", `${tagName}[${idx}].exercises`, []));
+    console.log("after dispatch change: ", daysValue);
+    // setSelectedEx(newSelectedArray);
+    return newArray;
   };
 
   const submitData = e => {
@@ -71,26 +153,24 @@ const PlanForm = ({ handleSubmit, reset, mode, dispatch, form }) => {
       return;
     }
 
+    console.log("form: ", e);
     //Move note to selected exercise list
-    const exerciseArray = selectedEx.map((item, idx) => {
-      return { ...item, note: e.notes[idx] };
-    });
+    // const exerciseArray = selectedEx.map((item, idx) => {
+    //   return { ...item, note: e.notes[idx] };
+    // });
 
-    const params = {
-      title: e.title,
-      level: e.level,
-      length: e.length,
-      duration: e.duration,
-      link: e.link,
-      exercises: exerciseArray
-    };
+    // const params = {
+    //   title: e.title,
+    //   level: e.level,
+    //   length: e.length,
+    //   duration: e.duration,
+    //   link: e.link,
+    //   exercises: exerciseArray
+    // };
 
-    sendRequest(
-      constants.PLAN_API,
-      actionTypes.POST_METHOD,
-      params,
-      ADD_EXERCISE
-    );
+    //sendRequest(constants.PLAN_API, actionTypes.POST_METHOD, e, ADD_EXERCISE);
+    setDays([]);
+    // setSelectedEx([]);
     reset();
   };
 
@@ -101,7 +181,7 @@ const PlanForm = ({ handleSubmit, reset, mode, dispatch, form }) => {
       </div>
       {console.log("error", error)}
       <Alert message={data && data.message} error={error} />
-      <Spinner loading={isLoading}>
+      <Spinner data={data} isLoading={isLoading}>
         <div className="card form-group">
           <div className="card-body">
             <div className="form-group">
@@ -173,16 +253,25 @@ const PlanForm = ({ handleSubmit, reset, mode, dispatch, form }) => {
         </div>
 
         <div className="card">
+          <div className="card-header">Workout calendar</div>
           <div className="card-body">
-            <h6>Exercises</h6>
+            {/* <h6>Exercises</h6> */}
 
-            <Field
+            {/* <Field
               name="myField"
               component={CustomDropdown}
               data={exercises}
               handleSelectedRow={handleSelectedRow}
+            /> */}
+            <FieldArray
+              name="days"
+              component={ListCard}
+              data={days}
+              handleLoadDataByTagName={handleLoadDataByTagName}
+              handleSelectedRow={handleSelectedRow}
+              handleRemoveExercise={handleRemoveExercise}
             />
-            <FieldArray name="notes" component={ListGroup} items={selectedEx} />
+            {/* <FieldArray name="notes" component={ListGroup} items={selectedEx} /> */}
           </div>
         </div>
 
@@ -194,6 +283,30 @@ const PlanForm = ({ handleSubmit, reset, mode, dispatch, form }) => {
   );
 };
 
-export default reduxForm({
+// PlanForm = reduxForm({
+//   form: "PlanForm" // a unique identifier for this form
+// })(PlanForm);
+
+// const selector = formValueSelector("PlanForm"); // <-- same as form name
+// PlanForm = connect(state => {
+//   // can select values individually
+//   const daysValue = selector(state, "days");
+//   return {
+//     daysValue
+//   };
+// })(PlanForm);
+
+// export default PlanForm;
+
+const PlanFormRedux = reduxForm({
   form: "PlanForm"
 })(PlanForm);
+
+const selector = formValueSelector("PlanForm");
+
+const mapStateToProps = state => ({
+  daysValue: selector(state, "days")
+  // values: getFormValues("PlanForm")(state)
+});
+
+export default connect(mapStateToProps)(PlanFormRedux);

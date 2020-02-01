@@ -7,15 +7,15 @@ const CustomDropdown = props => {
   //   const {
   //     input: { value, onChange }
   //   } = props;
-  const { handleSelectedRow, data } = props;
+  const { handleSelectedRow, data, extraParams } = props;
 
   const handleInputChange = e => {
-    $("#dropdownMenuButton").dropdown("toggle");
+    $(`#dropdownMenuButton${extraParams.idx}`).dropdown("toggle");
   };
 
   const handleClickOutside = event => {
     if (ref.current && !ref.current.contains(event.target)) {
-      $("#dropdownMenuButton").dropdown("hide");
+      $(`#dropdownMenuButton${extraParams.idx}`).dropdown("hide");
     }
   };
 
@@ -29,7 +29,10 @@ const CustomDropdown = props => {
   });
 
   const mapItem = data.map((item, idx) => (
-    <tr key={item + idx} onClick={() => handleSelectedRow(item, idx)}>
+    <tr
+      key={item + idx}
+      onClick={() => handleSelectedRow(item, idx, extraParams)}
+    >
       <td>
         <div className="d-flex justify-content-start align-items-center">
           <div
@@ -110,7 +113,7 @@ const CustomDropdown = props => {
       <input
         type="text"
         className="form-control dropdown-toggle"
-        id="dropdownMenuButton"
+        id={`dropdownMenuButton${extraParams.idx}`}
         placeholder="Add new exercise"
         // value={value}
         onClick={handleInputChange}
@@ -128,7 +131,7 @@ const CustomDropdown = props => {
       <div
         className={`dropdown-menu scroll-table `}
         style={{ width: "100%" }}
-        aria-labelledby="dropdownMenuButton"
+        aria-labelledby={`dropdownMenuButton${extraParams.idx}`}
       >
         <table className="table table-borderless table-hover">
           <tbody>{mapItem}</tbody>

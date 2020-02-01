@@ -3,8 +3,6 @@ import ListGroupItem from "./list-group-item/list-group-item";
 
 const ListGroup = props => {
   const { items, fields } = props;
-  console.log("list group: ", items);
-  console.log("fields: ", fields);
   return (
     <ul className="list-group list-group-flush">
       <li className="list-group-item">
