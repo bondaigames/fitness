@@ -3,12 +3,9 @@ import { Link } from "react-router-dom";
 import { Fragment } from "react";
 
 const WorkoutPlanItem = ({ exercises }) => {
-  console.log("exerciseexerciseexercise: ", exercises);
   const { isSuperset } = exercises;
 
   const RenderNormalExercise = ({ dayworkout }) => {
-    console.log("dayWorkout", dayworkout);
-
     const {
       note: { info, definition },
       exercise: { title, detailURL, image_1, image_2 }
@@ -16,7 +13,7 @@ const WorkoutPlanItem = ({ exercises }) => {
     return (
       <div className="row no-gutters pb-1">
         <div className="col-md-12 col-lg-5 text-center">
-          <a href={detailURL}>
+          <a href={detailURL} target="_blank" rel="noopener noreferrer">
             <img
               className="mr-1"
               style={{ width: "100px", height: "100px" }}

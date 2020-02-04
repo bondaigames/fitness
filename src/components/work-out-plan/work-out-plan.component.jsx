@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import WorkoutPlanItem from "./work-out-plan-item/work-out-plan-item.component";
 import { withRouter } from "react-router-dom";
 import _ from "lodash";
+import $ from "jquery";
 
-const WorkoutPlan = ({ collection, match }) => {
+const WorkoutPlan = ({ collection, match, location }) => {
   console.log("collection workout plan: ", collection, match);
   const { title, link, level, duration, length, days } = collection;
+  useEffect(() => {
+    // console.log("testing 123");
+    // $("body").scrollspy({ target: "#workout" });
+    if (location.hash) {
+      $("html, body").animate(
+        {
+          scrollTop: $("#workout").offset().top
+        },
+        200
+      );
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [match]);
 
   const RenderWorkoutPlan = () => {
     if (collection.length === 0) return null;
@@ -38,13 +52,22 @@ const WorkoutPlan = ({ collection, match }) => {
   };
 
   return (
-    <div className="col">
+    // <div className="col">
+    <React.Fragment>
       <div className="form-group"></div>
-      <div className="form-group">
+      <div
+        className="form-group"
+        id="workout"
+        data-spy="scroll"
+        data-offset="0"
+        data-target="#navbar-example2"
+      >
         <h4 className="text-success">Workout plan</h4>
         <RenderWorkoutPlan />
       </div>
-    </div>
+    </React.Fragment>
+
+    // </div>
   );
 };
 

@@ -5,8 +5,8 @@ const useApi = () => {
   return {
     axiosApi: axios.create({
       //baseURL: "https://fitness-f191d.firebaseio.com/"
-      baseURL: "http://localhost:5000"
-      // baseURL: "https://api.codesmt.com:5000"
+      // baseURL: "http://localhost:5000"
+      baseURL: "https://api.codesmt.com:5000"
     }),
     constants: contants
   };

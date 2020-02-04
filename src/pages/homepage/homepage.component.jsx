@@ -21,12 +21,12 @@ const HomePage = React.memo(
           className="jumbotron d-flex flex-column justify-content-xl-center align-items-xl-center"
           style={{ height: "50vh" }}
         >
-          <h2 className="text-center">When you wana give up</h2>
+          <h2 className="text-center">When you wanna give up</h2>
           <p className="text-center">
-            just think of the people who would love to see you fail
+            Just think of the people who would love to see you fail
           </p>
           <p className="text-center">
-            <Link to="/" className="btn btn-primary">
+            <Link to="/plans" className="btn btn-primary">
               Get started
             </Link>
             {/* <a className="btn btn-primary" role="button">
@@ -41,9 +41,9 @@ const HomePage = React.memo(
               <Spinner data={collections} isLoading={isLoading}>
                 {/* show most popular and newest
              temporary put collections to load all */}
-                <PlanCollection collections={collections}>
+                {/* <PlanCollection collections={collections}>
                   Most popular
-                </PlanCollection>
+                </PlanCollection> */}
                 <PlanCollection collections={collections}>
                   Newest
                 </PlanCollection>

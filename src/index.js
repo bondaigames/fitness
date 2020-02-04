@@ -8,10 +8,14 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./redux/store";
 import ScrollToTop from "./utils/scroll-to-top/scroll-to-top.component";
+
+if (process.env.NODE_ENV !== "development") {
+  console.log = () => {};
+}
 const app = (
   <Provider store={store}>
     <BrowserRouter>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <PersistGate persistor={persistor}>
         <App />
       </PersistGate>

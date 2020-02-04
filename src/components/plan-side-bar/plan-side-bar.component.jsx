@@ -9,8 +9,6 @@ import "./plan-side-bar.styles.scss";
 const TOTAL_DAY_PER_WEEK = 7;
 
 const PlanSideBar = ({ match, history, location, collection, dispatch }) => {
-  console.log("collectioncollectioncollectioncollection", collection);
-
   const { imageURL, duration, days } = collection;
 
   const DAY_DEFAULT = 1;
@@ -21,21 +19,14 @@ const PlanSideBar = ({ match, history, location, collection, dispatch }) => {
     ? pattern.match(location.pathname).id
     : DAY_DEFAULT;
 
-  const [planPaths, setPlanPaths] = useState({
-    main: orginalLink,
-    workout: `${orginalLink}/days/${currentDay}`
-  });
-
   useEffect(() => {
     const currentWeek = Number.parseInt(
       (currentDay - 1) / TOTAL_DAY_PER_WEEK + 1
     );
-    console.log("currentWeekcurrentWeekcurrentWeek: ", currentWeek, currentDay);
+    // updatedDaySelect(currentDay - 1);
     dispatch(change("PlanDetail", "week", currentWeek));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  console.log("plan side bar rendering ====", planPaths, location);
+  }, [(pattern.match(location.pathname) || {}).id]);
 
   let totalWeek = [];
   const totalWeekNumb = Number.parseInt(days.length / 8 + 1);
@@ -48,7 +39,6 @@ const PlanSideBar = ({ match, history, location, collection, dispatch }) => {
   }
 
   const handleWeekChange = e => {
-    console.log("week change", e);
     const currentDayByWeek = Number.parseInt(
       e.target.value * TOTAL_DAY_PER_WEEK - TOTAL_DAY_PER_WEEK
     );
@@ -59,18 +49,12 @@ const PlanSideBar = ({ match, history, location, collection, dispatch }) => {
     //Day number start to 0 but on url should be from 1
     const workOutPath = `${orginalLink}/days/${dayNumber + 1}`;
 
-    setPlanPaths({
-      ...planPaths,
-      workout: workOutPath
-    });
-
     history.push({
       pathname: workOutPath
     });
   };
 
   const RenderPlanWeek = () => {
-    console.log("currentDay=======", currentDay);
     //(Day - 1)/ per week + 1
     const currentWeek = Number.parseInt(
       (currentDay - 1) / TOTAL_DAY_PER_WEEK + 1
@@ -78,7 +62,6 @@ const PlanSideBar = ({ match, history, location, collection, dispatch }) => {
     const startDay = Number.parseInt(
       currentWeek * TOTAL_DAY_PER_WEEK - TOTAL_DAY_PER_WEEK
     );
-    console.log("startDaystartDay: ", startDay);
     const endDay = Number.parseInt(currentWeek * TOTAL_DAY_PER_WEEK);
 
     const planDays = [];
@@ -101,7 +84,7 @@ const PlanSideBar = ({ match, history, location, collection, dispatch }) => {
         planDays.push(
           <li className="list-group-item" key={i}>
             <Link
-              to={`${orginalLink}/days/${i + 1}`}
+              to={`${orginalLink}/days/${i + 1}#workout`}
               className="text-decoration-none"
               onClick={() => updatedDaySelect(i)}
             >
@@ -126,7 +109,7 @@ const PlanSideBar = ({ match, history, location, collection, dispatch }) => {
         <ul className="nav nav-pills flex-column">
           <li className="nav-item">
             <NavLink
-              to={planPaths.main}
+              to={`${orginalLink}/main-page`}
               exact
               className="nav-link"
               activeClassName="active"
@@ -137,14 +120,16 @@ const PlanSideBar = ({ match, history, location, collection, dispatch }) => {
           <li className="nav-item">
             <div className="form-group">
               <NavLink
-                to={planPaths.workout}
+                // to={planPaths.workout}
+                to={`${orginalLink}/days/${currentDay}`}
                 className="nav-link"
                 activeClassName="active"
               >
                 Work Schedule
               </NavLink>
             </div>
-            {location.pathname !== planPaths.workout ? (
+            {/* {location.pathname !== planPaths.workout ? ( */}
+            {!(pattern.match(location.pathname) || {}).id ? (
               ""
             ) : (
               <React.Fragment>
@@ -160,7 +145,7 @@ const PlanSideBar = ({ match, history, location, collection, dispatch }) => {
                 </div>
 
                 <div className="form-group">
-                  <ul className="list-group">
+                  <ul className="list-group" id="navbar-example2">
                     <RenderPlanWeek />
                   </ul>
                 </div>

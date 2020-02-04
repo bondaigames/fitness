@@ -12,6 +12,9 @@ const Directory = () => (
       */}
       <Route path="/plans" component={PlanPage}></Route>
       <Route path="/" exact component={HomePage}></Route>
+      <Route path="*">
+        <h1>404 - Page is not found</h1>
+      </Route>
     </Switch>
   </Layout>
 );

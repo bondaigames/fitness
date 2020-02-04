@@ -22,7 +22,7 @@ export const fetchCollectionsPlan = () => {
     dispatch(fetchCollectionsStart());
 
     const params = {
-      limit: 3
+      limit: 100
     };
     axiosApi
       .get(constants.GET_PLANS, { params })

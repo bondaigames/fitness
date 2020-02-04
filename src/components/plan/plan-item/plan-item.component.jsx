@@ -7,7 +7,10 @@ const PlanItem = React.memo(
     return (
       <div className="col-sm-12 col-md-6 col-lg-4">
         <div className="form-group">
-          <Link className="text-decoration-none" to={`/plans/${slug}/${_id}`}>
+          <Link
+            className="text-decoration-none"
+            to={`/plans/${slug}/${_id}/main-page`}
+          >
             <div className="card">
               <img
                 className="card-img-top w-100 d-block"
