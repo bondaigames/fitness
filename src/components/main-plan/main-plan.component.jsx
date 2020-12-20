@@ -29,8 +29,12 @@ const MainPlan = ({ collection: { title, description, days, imageURL } }) => {
       for (let j = 0; j < totalWeek; j++) {
         const offset1 = j * DAY_PER_WEEK;
         const tempWeek = [...days];
-        const currentWeek = tempWeek.slice(offset1, offset1 + DAY_PER_WEEK);
+        //const currentWeek = tempWeek.slice(offset1, offset1 + DAY_PER_WEEK);
+
+        //console.log("--- currentWeek ---" + JSON.stringify(currentWeek));
         const weekNumb = i * WEEK_PER_PAGE + j;
+        //console.log("--- week numb ---" + weekNumb);
+        const currentWeek = tempWeek.slice(((weekNumb + 1) * DAY_PER_WEEK) - DAY_PER_WEEK, (weekNumb + 1) * DAY_PER_WEEK);
         const week = {
           days: currentWeek,
           weekNumber: weekNumb

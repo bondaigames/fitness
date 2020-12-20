@@ -2,7 +2,7 @@ import React from "react";
 import PlanItem from "./plan-item/plan-item.component";
 
 const PlanCollection = ({ collections, children }) => {
-  console.log("PlanCollection rendering");
+  console.log("PlanCollection rendering" + collections);
   return (
     <div className="card form-group">
       <div className="card-header">{children}</div>

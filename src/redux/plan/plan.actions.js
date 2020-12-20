@@ -1,6 +1,8 @@
 import PlanActionTypes from "./plan.types";
 import useApi from "../../hooks/axios/axios-aws";
 
+
+
 export const fetchCollectionsStart = () => ({
   type: PlanActionTypes.FETCH_COLLECTIONS_START
 });
@@ -15,10 +17,10 @@ export const fetchCollectionsFailure = errorMessage => ({
   payload: errorMessage
 });
 
-const { axiosApi, constants } = useApi();
-
 export const fetchCollectionsPlan = () => {
+
   return dispatch => {
+    const { axiosApi, constants } = useApi();
     dispatch(fetchCollectionsStart());
 
     const params = {
@@ -39,6 +41,7 @@ export const fetchCollectionsPlan = () => {
 
 export const fetchPlanById = id => {
   return dispatch => {
+    const { axiosApi, constants } = useApi();
     dispatch(fetchCollectionsStart());
 
     const url = `${constants.GET_PLANS}/${id}`;

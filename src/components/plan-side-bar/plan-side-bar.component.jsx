@@ -29,7 +29,8 @@ const PlanSideBar = ({ match, history, location, collection, dispatch }) => {
   }, [(pattern.match(location.pathname) || {}).id]);
 
   let totalWeek = [];
-  const totalWeekNumb = Number.parseInt(days.length / 8 + 1);
+  const totalWeekNumb = days.length % 7 == 0 ? Number.parseInt(days.length / 7) : Number.parseInt(days.length / 7 + 1);
+  console.log("------------- day length --------------" + days.length);
   for (let i = 1; i <= totalWeekNumb; i++) {
     totalWeek.push(
       <option value={i} key={i}>
@@ -62,11 +63,17 @@ const PlanSideBar = ({ match, history, location, collection, dispatch }) => {
     const startDay = Number.parseInt(
       currentWeek * TOTAL_DAY_PER_WEEK - TOTAL_DAY_PER_WEEK
     );
+    
     const endDay = Number.parseInt(currentWeek * TOTAL_DAY_PER_WEEK);
+    //const endDay = days.length;
 
+    console.log("----------- days.length -------------" + days.length);
     const planDays = [];
     for (let i = startDay; i < endDay; i++) {
-      if (i > days.length) break;
+      if (i > days.length - 1) break;
+      console.log("----------- i -------------" + i);
+      console.log("----------- days[i] -------------" + JSON.stringify(days[i]) );
+      
       const { muscle_group } = days[i];
       if (i === Number.parseInt(currentDay - 1)) {
         planDays.push(
